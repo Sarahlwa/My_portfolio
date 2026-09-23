@@ -25,7 +25,7 @@ nav{
 }
 
 section{
-    margin-bottom: 4rem;
+    /* margin-bottom: 4rem; */
 }
 .sections li{
     display: inline;
@@ -438,11 +438,52 @@ line-height: 1.9rem;
     border-radius: 10px;
     border: none;
     color: white;
-    background-color:rgb(170, 3, 253) ;
+    background-color:rgb(170, 3, 253);
     font-size: 1.3rem;
     text-align: center;
     font-weight: 600;
     padding: 0.5rem;
     position: absolute;
     left: 50%;
+}
+
+.foot{
+    display: inline;
+    position: relative;
+    left: 2rem;
+    top: 1rem;
+    bottom: 1rem;
+}
+
+.foot .socals-icon{
+    font-size: 1.3rem;
+    margin-top: 0.7rem;
+}
+.foot .socals-icon i{
+    padding-right: 1rem;
+}
+
+.foot p{
+    margin-top: 0.5rem;
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+.foot .back_up{
+    display: inline;
+    position: relative;
+    left: 94%;
+    bottom: 6rem;
+    
+}
+
+.back_up i{
+    font-size: 1.7rem;
+    color:rgb(170, 3, 253);
+    font-weight: 900;
+}
+
+
+.back_up i:hover{
+     font-size: 1.9rem;
 }
