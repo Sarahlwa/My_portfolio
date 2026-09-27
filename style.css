@@ -1,87 +1,123 @@
+@import url('https://fonts.googleapis.com/css2?family=Miniver&family=Poppins:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap');
 *{
-    margin: 0;
-    padding: 0;
+    margin:0;
+    padding:0;
     text-transform: capitalize;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+:root{
+    /* colors */
+    --white-color:#fff;
+    --primary-color:#aa03fd;
+    --secondary-color:#ff2ba7;
+    --light-pink-color:#ffc0ee;
+    --light-voilet-color:#dea9f880;
+    --dark-color:#000;
     
+
+    /* font size */
+    --font-size-s:0.9rem;
+    --font-size-n:1rem;
+    --font-size-m:1.12rem;
+    --font-size-l:1.5rem;
+    --font-size-xl:2rem;
+    --font-size-xxl:2.3rem;
+
+
+/* font weight */
+
+    --font-weight-normal:400;
+    --font-weight-medium:500;
+    --font-weight-semibold:600;
+    --font-weight-bold:700;  
+
+ /* border radius */
+  --border-radius-s:8px;
+  --border-radius-m:30px;
+  --border-radius-circle:50%;
+
+  /*site max width  */
+  --site-max-width:1300px;
+}
+/* styling for whole page */
+ul{
+    list-style: none;
 }
 
-body{
-    overflow-x: hidden;
-}
-
-nav{
-    width: 100%;
-    height: 3rem;
-    display: flex;
-    justify-content: end;
-    align-items: center;
-    margin-top: 1.1rem;
-    padding-bottom: 1rem;
-    background-color: white;
-    border-bottom: 2px solid rgba(222, 169, 248,0.5);
-    /* position: fixed; */
-    z-index: 1;
-  
-}
-
-section{
-    /* margin-bottom: 4rem; */
-}
-.sections li{
-    display: inline;
-
-}
-
-.sections a{
+a{
     text-decoration: none;
-    color:black;
-    font-weight: 600;
-    padding: 0;
-     padding-bottom: 5px;
-    border-bottom: 2px solid transparent; 
-      font-family: "Poppins", sans-serif;
-      font-weight: 600;
 }
 
-.sections{
-    font-size: 1.3rem;
-    margin-right: 8rem;
+button{
+    cursor: pointer;
+    border: none;
+    background-color: none;
+}
+
+img{
+    width: 100%;
+}
+.section-content{
+    margin: 0 auto;
+    padding: 0 20px;
+    max-width: var(--site-max-width);
+}
+
+/* navbar styling */
+header{
+    position: fixed;
+    width: 100%;
+    background-color: var(--white-color);
+    z-index: 5;
    
 }
 
-.sections a{
-    margin-right: 2rem;
-     margin-left: 2rem;
-}
-
-.sections a:hover{
-    color:rgb(170, 3, 253);
-      border-bottom: 3px solid rgb(170, 3, 253) ;
-}
-
-
-.logo-sections{
+header .navbar{
     display: flex;
-     color: black;
-      position: absolute;
-    left: 5rem;
-    top: 1.5rem;
-
+    padding: 20px;
+    justify-content: space-between;
+    align-items: center;
 }
 
-.logo-sections h1{
-     font-family: "Poppins", sans-serif;
-     font-weight: 700;
+.navbar .nav-logo .logo-text{
+   color: var(--primary-color);
+   font-size: var(--font-size-xl);
+   font-weight: var(--font-weight-semibold);
 }
-.logo-sections i{
-    font-size: 1.9rem;
-     position: relative;
-     top: 0.4rem;
-     padding-right: 0.7rem;
-     color: rgb(170, 3, 253);
+
+.nav-logo i{
+    font-size: var(--font-size-xl);
+    color: var(--primary-col);
+    padding-right: 10px;
+}
+
+.nav-logo .logo-text {
+    display: inline;
+    padding-right: 10px;
+}
+
+.navbar .nav-menu {
+    display: flex;
+    gap: 10px;
+}
+
+.navbar .nav-menu .nav-link{
+    padding: 10px 18px;
+    color: var(--primary-color);
+    font-size: var(--font-size-m);
+    /* font-weight: var(--font-weight-normal); */
+}
+
+.navbar .nav-menu .nav-link:hover{
+    border-bottom: 3px solid var(--primary-color);
+    /* font-weight: var(--font-weight-bold); */
 }
 
 
+
+/* hero section */
  .image{
     display: inline;
 }
@@ -94,7 +130,8 @@ section{
  }
 
  .main{
-    margin: 4rem;
+   
+    margin-bottom: 0;
     position: relative;
 
    
@@ -102,7 +139,7 @@ section{
  .main .p1{
   font-size: 1.1rem;
   font-weight: 800;
-  color: rgb(255, 43, 167);
+  color: #ff2ba7;
     font-family: "Poppins", sans-serif;
     font-weight: 700;
     
@@ -187,36 +224,36 @@ section{
 
 .socals-icons i{
     font-size: 2rem;
-    border: 10px solid rgba(240, 221, 249,0.4);
-    background-color:rgba(238, 211, 250, 0.4);
-    border-radius: 50%;
-    color: rgb(170, 3, 253);
-    opacity: 0.7;
+    /* border: 10px solid rgba(240, 221, 249,0.4); */
+    /* background-color:rgba(238, 211, 250, 0.4); */
+    /* border-radius: 50%; */
+    color: rgb(103, 3, 154);
+    padding-right: 1.5rem;
+  
   
 }
 
 .socals-icons i:hover{
-    opacity: 1;
+    font-size: 2.4rem;
 }
 
-.socals-icons .icons{
-      padding-right: 1rem;
-  
-}
 
 
 
 
 .skill{
-    height:85vh; 
+    /* height:80vh;  */
  position: relative;
   background-color: rgb(242, 233, 250);
   margin-bottom: 2rem;
+  padding-bottom: 0.5rem;
+
   
 }
 
 .skill_container{
  margin: 5rem;
+
 }
 
 .imgg{
@@ -396,11 +433,11 @@ line-height: 1.9rem;
 
 
 .contact{
-     height:90vh; 
+     height:30%; 
  position: relative;
   background-color: rgb(242, 233, 250);
   margin-top: 5%;
- 
+ padding-bottom: 0.5rem;
 }
 
 
