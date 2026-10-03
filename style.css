@@ -24,6 +24,8 @@
     --font-size-l:1.5rem;
     --font-size-xl:2rem;
     --font-size-xxl:2.3rem;
+     --font-size-xxxl:4rem;
+
 
 
 /* font weight */
@@ -107,136 +109,139 @@ header .navbar{
     padding: 10px 18px;
     color: var(--primary-color);
     font-size: var(--font-size-m);
-    /* font-weight: var(--font-weight-normal); */
 }
 
 .navbar .nav-menu .nav-link:hover{
     border-bottom: 3px solid var(--primary-color);
-    /* font-weight: var(--font-weight-bold); */
 }
 
 
 
 /* hero section */
- .image{
-    display: inline;
-}
-
- .image .bg{
-    width: 5%;
-    height:5% ;
-    background-color: rgb(255, 192, 238);
-    border-radius: 50%;
+ .hero-section{
+    min-height: 100vh;
+    background-color: var(--white-color);
  }
 
- .main{
-   
-    margin-bottom: 0;
-    position: relative;
-
-   
- }
- .main .p1{
-  font-size: 1.1rem;
-  font-weight: 800;
-  color: #ff2ba7;
-    font-family: "Poppins", sans-serif;
-    font-weight: 700;
-    
+ .hero-section .section-content{
+    display: flex;
+    align-items: center;
+    min-height: 100vh;
+    color: var(--dark-color);
+    justify-content: space-between;
  }
 
-  .main .p1 span{
-    font-size: 1.5rem;
+ .hero-section .hero-details .intro{
+  font-size: var(--font-size-m);
+  color: var(--secondary-color);
+  font-family: "Poppins", sans-serif;
+  font-weight: var(--font-weight-semibold);
+ }
+
+  .hero-section .hero-details .title{
+    margin-top:8px
+    max-width: 70%;
+    font-size: var(--font-size-xxxl);
+    font-weight: var(--font-weight-bold);
+  
+  }
+  
+  .hero-section .hero-details .subtitle{
+    max-width: 70%;
+    font-size: var(--font-size-xl);
+    font-family: "Kaushan Script", cursive;
+    color: var(--primary-color);
   }
 
- .main h1{
-    position: relative;
-    left: 0.5rem;
-    font-size: 4rem;
-    font-weight: 700;
-    font-family: "Poppins", sans-serif;
-    top: -0.5rem;
-    font-style: normal;
-}
+   .hero-section .hero-details .description{
+    max-width: 70%;
+   margin:24px 0 40px;
+   font-size: var(--font-size-m);
+   }
 
-.main .p2{
-    position: relative;
-    top: -1.2rem;
-    left: 0.5rem;
-    font-size: 2rem;
-    font-weight: 100;
-    color:rgb(170, 3, 253);
-     font-family: "Kaushan Script", cursive;
-}
+  .hero-section .hero-details .buttons{
+    display: flex;
+    gap: 23px;
+  }
 
-.main .p3{
-    position: relative;
-    left: 0.5rem;
-    font-size: 1.2rem;
-    margin-top: 0.5rem;
-     margin-bottom: 1.3rem;
-     line-height: 1.9rem;
-}
-
-.main .btn{
-     position: relative;
-    left: 0.5rem;
+   .hero-section .hero-details .button{
+    padding: 10px 20px;
+    color:var(--white-color);
+    border: 2px solid transparent;
+    border-radius: var(--border-radius-m);
+    font-weight: var(--font-weight-medium);
+    background-color: var(--secondary-color);
+    transition: 0.3s ease;
+   }
   
+    .hero-section .hero-details .button:hover,
+     .hero-section .hero-details .cv{
+        background-color:transparent;
+        color:var(--primary-color);
+        border: 2px solid var(--primary-color);
+     }
+
+   .hero-section .hero-details .cv:hover{
+    background-color: var(--secondary-color);
+        color:var(--white-color);
+        border-color: var(--secondary-color);
+   }
+
+   .hero-section .hero-image-wrapper{
+    max-width: 500px;
+    margin-right: 0px;
+   }
+
+/* media query for small screens */
+@media screen and (max-width:900px){
+    :root{
+    --font-size-m:1rem;
+    --font-size-l:1.3rem;
+    --font-size-xl:1.5rem;
+    --font-size-xxl:1.8rem;
+    }
+
     
 }
 
-.main .btn .mywork{
-    width: 11rem;
-    height: 3rem;
-    border-radius: 10px;
-    border: none;
-    color: white;
-    background-color:rgb(170, 3, 253) ;
-    font-size: 1rem;
-    font-weight: 600;
-    padding: 1rem;
-
-}
-
-.main .btn .view i{
-    padding-left: 0.2rem;
-}
-
-.main .btn .cv{
-  margin-left: 3rem;
-  border: 2px solid rgb(255, 43, 167);
-  color: rgb(255, 43, 167);
-  background-color: white;
-}
-
-.main .btn .cv:hover{
-    background-color:rgb(255, 43, 167);
-    color: white;
-   
-}
 
 
-.socals-icons{
-    margin-top: 2rem;
-    position: relative;
-    left: 0.5rem;
-}
 
-.socals-icons i{
-    font-size: 2rem;
-    /* border: 10px solid rgba(240, 221, 249,0.4); */
-    /* background-color:rgba(238, 211, 250, 0.4); */
-    /* border-radius: 50%; */
-    color: rgb(103, 3, 154);
-    padding-right: 1.5rem;
-  
-  
-}
 
-.socals-icons i:hover{
-    font-size: 2.4rem;
-}
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* skill section */
 
 
 
