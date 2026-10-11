@@ -19,17 +19,23 @@
     <!-- navbar -->
      <header>
         <nav class="navbar section-content">
-            <a href="#" class="nav-logo "><i class="fa-solid fa-code"></i>
+            <a href="#" class="nav-logo ">
+                <!-- <i class="fa-solid fa-code"></i> -->
             <h1 class="logo-text">salwa</h1>
             </a>
         
     
           <ul class="nav-menu">
+           <button id="menu-close-button"><div class="fas fa-times"></div></button>
+
             <li class="nav-item">
                  <a href="#home" class="nav-link">home</a>
                 </li>
+              <li class="nav-item">
+                 <a href="#about" class="nav-link">about</a>
+                </li>   
              <li class="nav-item">
-                 <a href="#skill" class="nav-link">skill</a>
+                 <a href="#skill" class="nav-link">skills</a>
                 </li>
              <li class="nav-item">
                  <a href="#project" class="nav-link">project</a>
@@ -38,17 +44,18 @@
                  <a href="#contact" class="nav-link">contact</a>
                 </li>            
           </ul>
+                     <button id="menu-open-button"><div class="fa-solid fa-bars"></div></button>
     </nav>
      </header>
     
     
     <!-- hero section -->
-    <section class="hero-section">
-        <div class="section-content" id="home">
+    <section class="hero-section" id="home">
+        <div class="section-content" >
           <div class="hero-details">
             <h5 class="intro">hello, i'm <span>&#128075;</span></h5>
             <h1 class="title">salwa yusuf</h1>
-            <h4 class="subtitle">IT student & aspiring developer</h4>
+            <h5 class="subtitle">frontend    developer</h5>
             <p class="description">i build clean, responsive and user-friendly websites and applications. i'm passionate about solving problems with code and creating impact.</p>
 
 
@@ -57,211 +64,193 @@
             <a href="#" class="button cv "> download CV <i class="fa-solid fa-download"></i> </a>
           </div>
            
-            <div class="socals-icons">
-                <a href="#" class="icons"><i class="fa-brands fa-github"></i></a>
-                 <a href="#" class="icons"><i class="fa-brands fa-linkedin"></i></a>
-                  <a href="#"  class="icons"><i class="fa-brands fa-facebook"></i></a>
-                   <a href="#" class="icons"><i class="fa-brands fa-instagram"></i></a>
+            <div class="social-link-list">
+                <a href="#" class="social-link"><i class="fa-brands fa-github"></i></a>
+                 <a href="#" class="social-link"><i class="fa-brands fa-linkedin"></i></a>
+                  <a href="#"  class="social-link"><i class="fa-brands fa-facebook"></i></a>
+                   <a href="#" class="social-link"><i class="fa-brands fa-instagram"></i></a>
             </div>
            </div>
 
            <div class="hero-image-wrapper">
-             <img src="./images/929923023069805004.jpg" alt="hero-image" class="hero-image">
+             <img src="./images/my-pic2.jpeg" alt="hero-image" class="hero-image">
            </div>
         </div>
     </section>
 
 
-    <!-- skill -->
-<section>
-    <div class="skill" id="skill">
+    <!-- about section -->
+     <section class="about-section" id="about">
+        <div class="section-content" >
 
-        
-
-       <div class="skill_container">
-
-        
-        <div class="titile">
-            <h2>skills</h2>
-        </div>
-
-        <div class="imgg">
-       <img src="./images/laptop_img.jpg" class="img">
-
-        </div>
-         
-         
-         <div class="prof_skill">
-            <h2>profesional skills</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore expedita est suscipit<br> officiis facere commodi tempore quaerat rerum natus dolorem possimus provident <br>accusantium vitae dolorum laborum non, eius dicta harum!</p>
-           
-         </div>
-
-
-         <!-- html -->
-        <div class="skill_list">
-
-            <div class="skill_list_bl" >
-
-            <div class="icon-text">
-             <i class="fa-brands fa-html5"></i>
-            <p>HTML</p>
-             <p class="level">95%</p>
-           </div>
-            </div>
-        </div>
-
-
-        <!-- css -->
-         <div class="skill_list" >
-
-            <div class="skill_list_bl" id="css" >
-
-            <div class="icon-text" id="cs">
-             <i class="fa-brands fa-css3-alt"></i>
-            <p>CSS</p>
-             <p class="level" id="csp">90%</p>
-           </div>
-            </div>
-        </div>
-
-
-        <!-- javaScript -->
-         <div class="skill_list">
-
-            <div class="skill_list_bl" id="js" >
-
-            <div class="icon-text" id="jss">
-            <i class="fa-brands fa-square-js"></i>
-            <p>javaScript</p>
-             <p class="level">85%</p>
-           </div>
-            </div>
-        </div>
-
-
-        <!-- bootStrap -->
-         <div class="skill_list">
-
-            <div class="skill_list_bl" id="boots" >
-
-            <div class="icon-text" id="bootss">
-             <i class="fa-brands fa-bootstrap"></i>
-            <p>BootStrap</p>
-             <p class="level">65%</p>
-           </div>
-            </div>
-        </div>
-       </div>
+    <div class="about-image-wrapper">
+      <img src="./images/my-pic2.jpeg" alt="about-image" class="about-image">
     </div>
+                
+         <div class="section-details">
+           <h2 class="section-title">about me</h2>
+               <p class="text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Animi enim magnam iure neque repellendus quasi placeat exercitationem tempora ipsam aperiam vel, beatae repudiandae eos perferendis et, architecto totam porro voluptatem?</p>
+              
+               <div class="buttons">
+               <a href="#" class="button learn-more">learn more <i class="fa-solid fa-arrow-right"></i> </a>
+            </div>
+            </div>
+
+           
+        </div>
+     </section>
+
+
+    <!-- skills section -->
+<section class="skills-section" id="skill">
+    <h2 class="section-title">skills</h2>
+    <div class="section-content">
+      <div class="max-width">
+     <div class="skills-content">
+      <div class="column left">
+        <div class="text">my creative skills & expriences</div>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci, voluptatibus in? Voluptatibus illo sequi repellendus, pariatur omnis ipsa fugit, suscipit dicta id modi dolorem consequuntur eaque placeat provident impedit? Corrupti.</p>
+         <a href="#">read more</a>
+      </div>
+      <div class="cloumn right">
+        <div class="bars">
+          <div class="info">
+            <span>HTML</span>
+            <span>90%</span>
+          </div>
+          <div class="line html"></div>
+        </div>
+        <div class="bars">
+          <div class="info">
+            <span>CSS</span>
+            <span>90%</span>
+          </div>
+           <div class="line css"></div>
+        </div>
+        <div class="bars">
+          <div class="info">
+            <span>JavaScript</span>
+            <span>90%</span>
+          </div>
+           <div class="line JavaScript"></div>
+        </div>
+        <div class="bars">
+          <div class="info">
+            <span>bootstrap</span>
+            <span>90%</span>
+          </div>
+           <div class="line bootstrap"></div>
+        </div>
+      </div>
+     </div>
+      </div>
+      
 </section>
 
 
-<!-- project -->
- <section>
-    <div class="project" id="project">
+<!-- project section -->
+ <section class="project-section" id="project">
+    <h2 >projects</h2>
+    <div class="section-content" >
+        <div class="section-details">
         
+             <div class="projects-container">
+                  <!-- project-1 -->
+                         <div class="project-box">
+              <img src="./images/929923023069805004.jpg" alt="" class="project-image">
+               <div class="project-details">
+               <h6 class="title">web design</h6>
+                 <p class="text"><i>Lorem ipse aa veritatis et facilis!</i></p>
+                 <a href="#" target="_main" ><i class='bx bx-link-external'></i></a>
+                </div>
+                    </div>
 
-        
-        <div class="titile">
-            <h2>projects</h2>
-        </div>
-        <div class="pro1">
+                   <!-- project-2 -->
+                       <div class="project-box">
+              <img src="./images/929923023069805004.jpg" alt="" class="project-image">
+               <div class="project-details">
+               <h6 class="title">web design</h6>
+                 <p class="text"><i>Lorem ipse aa veritatis et facilis!</i></p>
+                 <a href="#" target="_main" ><i class='bx bx-link-external'></i></a>
+                </div>
+                    </div>
+              
+
+                 <!-- project-3 -->
+                          <div class="project-box">
+              <img src="./images/929923023069805004.jpg" alt="" class="project-image">
+               <div class="project-details">
+               <h6 class="title">web design</h6>
+                 <p class="text"><i>Lorem ipse aa veritatis et facilis!</i></p>
+                 <a href="#" target="_main" ><i class='bx bx-link-external'></i></a>
+                </div>
+                    </div>
+
+                 <!-- project-4 -->
+                           <div class="project-box">
+              <img src="./images/929923023069805004.jpg" alt="" class="project-image">
+               <div class="project-details">
+               <h6 class="title">web design</h6>
+                 <p class="text"><i>Lorem ipse aa veritatis et facilis!</i></p>
+                 <a href="#" target="_main" ><i class='bx bx-link-external'></i></a>
+                </div>
+                    </div>
             
-        <div class="works">
 
-            <!-- work-1 -->
-            <div class="box">
-                 <a href="google.com" target="_main"> <img src="./images/929923023069805004.jpg" alt=""></a>
-                 <h6>web development</h6>
-                 <p><i>follwer shops</i></p>
-            </div>
+                 <!-- project-5 -->
+            <div class="project-box">
+              <img src="./images/929923023069805004.jpg" alt="" class="project-image">
+               <div class="project-details">
+               <h6 class="title">web design</h6>
+                 <p class="text"><i>Lorem ipse aa veritatis et facilis!</i></p>
+                   <a href="#" target="_main" ><i class='bx bx-link-external'></i></a>
+                </div>
+                    </div>
 
-
-            <!-- work-2 -->
-            <div class="box">
-                 <a href="google.com" target="_main"> <img src="./images/929923023069805004.jpg" alt=""></a>
-                 <h6>web development</h6>
-                 <p><i>follwer shops</i></p>
-            </div>
-
-            <!-- work-3 -->
-            <div class="box">
-                 <a href="google.com" target="_main"> <img src="./images/929923023069805004.jpg" alt=""></a>
-                 <h6>web development</h6>
-                 <p><i>follwer shops</i></p>
-            </div>
-
-            <!-- work-4 -->
-            <div class="box">
-                 <a href="google.com" target="_main"> <img src="./images/929923023069805004.jpg" alt=""></a>
-                 <h6>web development</h6>
-                 <p><i>follwer shops</i></p>
-            </div>
-
-            <!-- work-5 -->
-            <div class="box">
-                 <a href="google.com" target="_main"> <img src="./images/929923023069805004.jpg" alt=""></a>
-                 <h6>web development</h6>
-                 <p><i>follwer shops</i></p>
+                <!-- prject-6 -->
+             <div class="project-box">
+              <img src="./images/929923023069805004.jpg" alt="" class="project-image">
+               <div class="project-details">
+               <h6 class="title">web design</h6>
+                 <p class="text"><i>Lorem ipse aa veritatis et facilis!</i></p>
+                 <a href="#" target="_main" ><i class='bx bx-link-external'></i></a>
+                </div>
+                    </div>
             </div>
         </div>
-        </div>
-    </div>
  </section>
 
 
-        <!-- contact -->
-   <section>
-    <div class="contact" id="contact">
+        <!-- contact-us section -->
+   <section class="contact-section" id="contact">
+    <h2 class="section-title">contact us</h2>
+      <div class="section-content">
 
-    <div class="cont1">
-
-        <div class="titile">
-            <h2>contact</h2>
-        </div>
-           <div class="details">
-            
-            <form>
-                <input type="text" placeholder="name" name="name" class="innput">
-                <br>
-                <input type="email" placeholder="email" name="email" class="innput">
-                <br>
-                <textarea name="meassage" id="meassage" rows="11" cols="31"></textarea>
-                <br>
-                <button class="btn">send</button>
-            </form>
-
-           </div>
-         
-    </div>
-    </div>
+       <form action="#" class="contact-form">
+        <input type="text" placeholder="your name" class="form-input" required>
+        <input type="email" placeholder="your email" class="form-input" required>
+        <textarea placeholder="your meassage" class="form-input" required></textarea>
+        <button class="submit-button">submit</button>
+       </form>
+      </div>
    </section>
 
 
 
-     <!-- footer -->
-      <footer>
-          <div class="foot">
-          
-             
-               
-             <div class="socals-icon">
-                <a href="#" class="icons"><i class="fa-brands fa-github"></i></a>
-                 <a href="#" class="icons"><i class="fa-brands fa-linkedin"></i></a>
-                  <a href="#"  class="icons"><i class="fa-brands fa-facebook"></i></a>
-                   <a href="#" class="icons"><i class="fa-brands fa-instagram"></i></a>
-                   </div>
-             <p>&copy; salwa yusuf.all rights reserved</p>
-             
-             <div class="back_up" >
-                <a href="" ><i class="fa-solid fa-arrow-up"></i></a>
-                
-             </div>
-          </div>
-       
+     <!-- footer section -->
+      <footer class="footer-section">
+        <div class="section-content">
+            <h2 class="name">salwa</h2>
 
-        
+         <div class="social-link-list">
+                <a href="#" class="social-link"><i class="fa-brands fa-github"></i></a>
+                 <a href="#" class="social-link"><i class="fa-brands fa-linkedin"></i></a>
+                  <a href="#"  class="social-link"><i class="fa-brands fa-facebook"></i></a>
+                   <a href="#" class="social-link"><i class="fa-brands fa-instagram"></i></a>
+                   </div>
+
+          <p class="copyright-text">&copy; salwa.all rights reserved</p>
+        </div> 
       </footer>
 
 
