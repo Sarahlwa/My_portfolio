@@ -1,14 +1,3 @@
-$(document).ready(function(){
-    $(window).scroll(function(){
-        if(this.scrollY > 20){
-            $('.navbar').addClass("sticky");
-        }else{
-             $('.navbar').removeClass("sticky");
-        }
-    })
-})
-
-
 const navLinks = document.querySelector(".nav-menu .nav-link");
 const menuOpenButton = document.querySelector("#menu-open-button");
 const menuCloseButton = document.querySelector("#menu-close-button");

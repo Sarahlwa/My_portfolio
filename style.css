@@ -105,11 +105,6 @@ header .navbar{
     transition: all 0.3s ease;
 }
 
-.navbar.sticky{
-    padding: 15px 0;
-    background: var(--primary-color);
-}
-
 .navbar .nav-logo .logo-text{
    color: var(--white-color);
    font-size: var(--font-size-xl);
@@ -128,10 +123,6 @@ header .navbar{
     transition: all 0.3s ease;
 }
 
-.navbar.sticky .logo-text a span{
-    color: var(--white-color);
-}
-
 .navbar .nav-menu {
     display: flex;
     gap: 10px;
@@ -141,17 +132,29 @@ header .navbar{
     padding: 10px 18px;
     color: var(--white-color);
     font-size: var(--font-size-m);
-    transition: .1s ease;
+    position: relative;
 }
 
-.navbar .nav-menu .nav-link:hover{
-    border-bottom: 3px solid var(--secondary-color);
+ .navbar .nav-menu .nav-link::after{
+    content: "";
+    width: 100%;
+    height: 3px;
+    bottom: 0;
+    left: 0;
+    display: block;
+    position: absolute;
+    color: var(--secondary-color);
+
+     transform: scaleX(0);
+     transform-origin: bottom right;
+     transition: 0.3s ease-out;
+}
+
+ .navbar .nav-menu .nav-link:hover{
+    transform: scaleX(1);
+    transform-origin: bottom left;
     color: var(--secondary-color);
 }
-/* 
-.navbar.sticky .nav-menu .nav-link:hover{
-    color: var(--white-color);
-} */
 
 .navbar :where(#menu-open-button, #menu-close-button){
     display: none;
@@ -173,7 +176,7 @@ header .navbar{
 
   .hero-section .hero-details,
   .hero-image-wrapper{
-    margin-top: 5rem;
+    margin-top: 3rem;
   }
 
  .hero-section .hero-details .intro{
@@ -254,7 +257,7 @@ header .navbar{
 
    .hero-section .hero-image-wrapper{
     max-width: 500px;
-    margin-right: 20px;
+    margin-right: 50px;
    }
 
     .hero-section .hero-image-wrapper .hero-image{
@@ -430,7 +433,7 @@ header .navbar{
 .project-section{
 padding: 0 0 30px;
   background-color:var(--primary-color);
-  scroll-margin-top: 4.5rem;
+  scroll-margin-top: 1rem;
 }
 
 .project-section .section-content{
@@ -466,13 +469,21 @@ padding: 0 0 30px;
 .projects-container .project-box{
     position: relative;
     border-radius: var(--border-radius-s);
-    /* box-shadow: 0 0 1rem var(--secondary-color); */
+    box-shadow: 0 0 1rem rgba(219, 219, 219,0.3);
     overflow: hidden;
     display: flex;
+      cursor: pointer;
+}
+
+.project-image{
+   height: 250px;
+   width: 100%;
+   object-fit: cover;
 }
 .projects-box img {
     width: 100%;
-    transition: .9s ease;
+    height: 100%;
+  transition: .9s ease;
 }
 
 .project-box:hover img{
@@ -485,7 +496,7 @@ padding: 0 0 30px;
     left: 0;
     width: 100%;
     height: 100%;
-    background: linear-gradient(rgba(0,0,0,.1), var(--secondary-color));
+    background: linear-gradient(rgba(0,0,0,.1), var(--primary-color));
     display: flex;
     justify-content: center;
     align-items: center;
@@ -503,11 +514,13 @@ padding: 0 0 30px;
 .project-details .title{
     font-size: var(--font-size-xl);
     font-weight: var(--font-weight-bold);
+    color: var(--white-color);
 }
 
 .project-details .text{
     font-size: var(--font-size-m);
     margin: .3rem 0 1rem;
+    color: var(--white-color);
 }
 
 .project-details a{
