@@ -434,16 +434,6 @@ header .navbar{
 }
 
 
-
-
-
-
-
-
-
-
-
-
 /* projects section */
 .project-section{
 padding: 0 0 30px;
@@ -620,7 +610,7 @@ padding: 0 0 30px;
     color: var(--white-color);
     transition: 0.2s ease;
 }
-.footer-section .section-content{
+.footer-section .footer-content{
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -642,11 +632,17 @@ padding: 0 0 30px;
 
 
 
-/* responsive media query code for max width 1024px */
-@media screen and (max-width:1024px){
+/* responsive media query code for max width 1330px */
+@media screen and (max-width:1330px){
+    .section-content{
+        padding: 0 3% 0;
+    }
 
+     .footer-section{
+        padding: 2rem 3%;
+        margin: 0;
+    }
 }
-
 
 /* responsive media query code for max width 900px */
 @media screen and (max-width:900px){
@@ -655,6 +651,10 @@ padding: 0 0 30px;
     --font-size-l:1.3rem;
     --font-size-xl:1.5rem;
     --font-size-xxl:1.8rem;
+    }
+
+    .section-content{
+        padding: 0 3% 0;
     }
     
     body.show-mobile-menu header::before{
@@ -760,6 +760,18 @@ padding: 0 0 30px;
         margin-bottom: 35px;
     }
 
+    .footer-section{
+        padding: 2rem 3%;
+        margin: 0;
+    }
+
+}
+
+/* responsive media query code for max width 768px */
+@media screen and (max-width:768px){
+       .project-section h2{
+        margin-bottom: 3rem;
+       }
 }
 
 /* responsive media query code for max width 640px */
@@ -769,7 +781,7 @@ padding: 0 0 30px;
         width: 100%;
      }
 
-    .footer-section .section-content{
+    .footer-section .footer-content{
         flex-direction: column;
         gap: 20px;
     }
@@ -784,151 +796,6 @@ padding: 0 0 30px;
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* skill section */
-.skill{
-    /* height:80vh;  */
- position: relative;
-  background-color: rgb(242, 233, 250);
-  margin-bottom: 2rem;
-  padding-bottom: 0.5rem;
-
-  
-}
-
-.skill_container{
- margin: 5rem;
-
-}
-
-.imgg{
-    display:inline-flex;
-    justify-content: end;
-    position:absolute;
-    left: 25%;
-    top: 25%;
-}
-.img{
-   width:60%;
-   height: 60%;
-   border-radius: 10px;
-}
-
-.prof_skill{
-    display:inline;
-    padding-bottom: 2rem;
-}
-
-.prof_skill h2{
-font-family: "Poppins", sans-serif;
-font-weight: 700;
-padding-bottom: 1rem;
-}
-
-.prof_skill p{
-font-size: 1.2rem;
-padding-bottom: 1rem;
-line-height: 1.9rem;
-}
-
-.titile{
-    font-weight: 900;
-    text-align: center;
-    font-size: 2rem;
-    color:rgb(170, 3, 253) ;
-     font-family: "Poppins", sans-serif;
-
-}
-
-.skill_list{
-   display: flex;
-   position: relative;
-   height: 3rem;
-   width: 40%;
-   background-color: white;
-   border-radius: 0.3rem;
-   box-shadow: 2px 2px 8px lightgray;
-    border-bottom: 2px solid lightgrey;
-    margin-bottom: 1.5rem;
-    
-}
-
-.skill_list:hover{
-     box-shadow: 2px 2px 18px  white;
-}
-
-.skill_list_bl{
-    display: flex;
-    align-items: center;
-    border-bottom: 4px solid rgb(255, 43, 167);
-    width: 95%;
-}
-
-.icon-text{
-    display: flex;
-    align-items: center;
-    width: 100%;
-}
-.icon-text i{
-    font-size: 2rem;
-    color: orange;
-    padding-right: 0.5rem;
-}
-
-.icon-text p{
-    font-size: 1.1rem;
-    font-weight: 900;
-    padding-right:2rem;
-}
-
- .level{
-    position: absolute;
-    left: 33rem;
-   
-}
-
- #css{
-    width: 90%;
-}
-
-#cs i{
-     color: blue;
-}
-
-#csp{
-    position: absolute;
-   left: 33rem;
-}
-
-
-#js{
-    width: 85%;
-}
-
-#jss i{
-    color: yellow;
-}
-
-#boots{
-    width: 65%;
-}
-
-#bootss i{
-    color: blueviolet;
-}
 
 
 
