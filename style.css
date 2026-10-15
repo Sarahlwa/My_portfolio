@@ -45,7 +45,7 @@ html{
   --border-radius-circle:50%;
 
   /*site max width  */
-  --site-max-width:1300px;
+  --site-max-width:1500px;
 }
 /* styling for whole page */
 ul{
@@ -66,7 +66,7 @@ img{
     width: 100%;
 }
 .section-content{
-    margin: 0 auto;
+    margin: 0 3%;
     padding: 0;
     max-width: var(--site-max-width);
 }
@@ -173,6 +173,9 @@ header .navbar{
     color: var(--white-color);
  }
 
+   .hero-section .hero-details{
+    padding-left: 4%;
+   }
   .hero-section .hero-details,
   .hero-image-wrapper{
     margin-top: 3rem;
@@ -604,6 +607,7 @@ padding: 0 0 30px;
 .footer-section{
     padding: 20px 0;
     background: var(--primary-color);
+    padding:2rem 3%;
 }
 
 .footer-section :where(.copyright-text, .social-link, .name){
