@@ -486,7 +486,7 @@ padding: 0 0 30px;
 }
 
 .project-image{
-   height: 250px;
+   height: 300px;
    width: 100%;
    object-fit: cover;
 }
@@ -522,13 +522,13 @@ padding: 0 0 30px;
 }
 
 .project-details .title{
-    font-size: 3rem;
+    font-size: 4rem;
     font-weight: var(--font-weight-bold);
     color: var(--white-color);
 }
 
 .project-details .text{
-    font-size: 1.5rem;
+    font-size: 2.5rem;
     margin: .3rem 0 1rem;
     color: var(--white-color);
 }
