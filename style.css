@@ -50,7 +50,7 @@ html {
   --border-radius-circle:50%;
 
   /*site max width  */
-  --site-max-width:1500px;
+  /* --site-max-width:1500px; */
 } */
 /* styling for whole page */
 ul{
@@ -97,17 +97,19 @@ img{
 
 /* navbar styling */
 header{
-    position: fixed;
-    width: 100%;
-    background:var(--primary-color);
-    z-index: 5;
+position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background:var(--primary-color);
+  z-index: 1000;
 }
 
 header .navbar{
     display: flex;
     padding: 2rem 9%;
     justify-content: space-between;
-    align-items: center;
+    align-items: center; 
     transition: all 0.3s ease;
 }
 
@@ -304,7 +306,7 @@ header .navbar{
     line-height: 40px;
     margin: 30px 0 30px;
      text-align: justify;
-    font-size: var(--font-size-m);
+    font-size: 2.5rem;
 }
 
 .hide{
@@ -353,14 +355,14 @@ header .navbar{
 }
 
 .skills-section .skills-content .left .subtitle{
-    font-size:1.9rem;
+    font-size:3rem;
     font-weight: var(--font-weight-semibold);
     margin-bottom: 10px;
 }
 
 .skills-section .skills-content .left .text{
     text-align: justify;
-    font-size: var(--font-size-m);
+    font-size: 2.5rem;
 }
 
 .skills-section .skills-content .left .button{
@@ -453,7 +455,7 @@ padding: 0 0 30px;
      text-align: center;
     padding:60px 0 50px ;
     text-transform: uppercase;
-    font-size: var(--font-size-xxl);
+    font-size: 4rem;
 }
 
 .project-section h2::after{
@@ -520,13 +522,13 @@ padding: 0 0 30px;
 }
 
 .project-details .title{
-    font-size: var(--font-size-l);
+    font-size: 3rem;
     font-weight: var(--font-weight-bold);
     color: var(--white-color);
 }
 
 .project-details .text{
-    font-size: var(--font-size-n);
+    font-size: 1.5rem;
     margin: .3rem 0 1rem;
     color: var(--white-color);
 }
@@ -535,14 +537,14 @@ padding: 0 0 30px;
     display: inline-flex;
     justify-content: center;
     align-items: center;
-    width: 5rem;
-    height: 5rem;
+    width: 6rem;
+    height: 6rem;
     background: var(--white-color);
     border-radius: var(--border-radius-circle);
 }
 
 .project-details a i{
-    font-size: var(--font-size-m);
+    font-size: 2rem;
     color: var(--dark-color);
 }
 
@@ -589,7 +591,7 @@ padding: 0 0 30px;
     padding: 10px 26px;
     margin-top: 10px;
     color: var(--white-color);
-    font-size: var(--font-size-m);
+    font-size: 2rem;
     font-weight: var(--font-weight-medium);
     background: var(--primary-color);
     border-radius: var(--border-radius-m);
@@ -613,6 +615,7 @@ padding: 0 0 30px;
 .footer-section :where(.copyright-text, .social-link, .name){
     color: var(--white-color);
     transition: 0.2s ease;
+    font-size: 1.75rem;
 }
 .footer-section .footer-content{
     display: flex;
@@ -626,7 +629,7 @@ padding: 0 0 30px;
 }
 
 .footer-section .social-link-list .social-link{
-    font-size: var(--font-size-l);
+    font-size: 2rem;
 }
 
 .footer-section .social-link-list .social-link:hover{
